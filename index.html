@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Recharging System</title>
+    <style>
+      .user-card {
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin: 10px;
+        border-radius: 5px;
+        display: inline-block;
+        width: 200px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Phone Recharging System</h1>
+
+    <!-- Form to Add a User -->
+    <div>
+      <h2>Add a User</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="First Name" />
+      <br />
+      <label for="surname">Surname:</label>
+      <input type="text" id="surname" placeholder="Surname" />
+      <br />
+      <label for="initialCredit">Initial Credit (€):</label>
+      <input type="number" id="initialCredit" placeholder="Initial Credit" />
+      <br />
+      <button onclick="addUser()">Add User</button>
+    </div>
+
+    <!-- Call Management -->
+    <div>
+      <h2>Make a Call</h2>
+      <label for="callMinutes">Minutes:</label>
+      <input type="number" id="callMinutes" placeholder="Minutes" />
+      <br />
+      <button onclick="makeCall()">Make Call</button>
+    </div>
+
+    <!-- Recharge Management -->
+    <div>
+      <h2>Recharge Credit</h2>
+      <label for="rechargeAmount">Amount (€):</label>
+      <input type="number" id="rechargeAmount" placeholder="Recharge Amount" />
+      <br />
+      <button onclick="rechargeUsers()">Recharge Users</button>
+    </div>
+
+    <!-- User Cards Section -->
+    <div id="user-container">
+      <!-- User cards will be dynamically added here -->
+    </div>
+
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
